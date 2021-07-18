@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Time Series</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/CurrencyTimeSeries.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="brand"><img src="images/dollar-symbol.png" alt="Dollar"></div>
+        <div id="title"><h1>Currency Converter</h1></div>
+        
+    </header>
+
+    <section id="content">
+        <div class="form-content">
+            <form action="/">
+                <div id="start">
+                    <label for="from">Start Date :</label>
+                    <input type="date" id="from" name="from" required>
+                </div>
+                <div id="finish">
+                    <label for="to">End Date :</label>
+                    <input type="date" id="to" name="to" required>
+                </div>
+
+                <div class="ref">
+                    <p>Select Currency 1 :</p>
+                    <div id="initial-currency"></div>
+                </div>
+                <div class="target">
+                    <p>Select Currency 2 :</p>
+                    <div id="final-currency"></div>
+                </div>
+                <div id="sbmt">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            <div id="result2"></div>
+            <!-- <table>
+                <thead id="tableHead"></thead>
+                <tbody id="tableData"></tbody>
+            </table> -->
+        </div>
+        <div id="myGraph">
+            <canvas id="myChart"></canvas>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="js/CurrencyTimeSeries.js"></script>
+    <!-- <script src="js/ChartGraph.js"></script> -->
+
+</body>
+
+</html>

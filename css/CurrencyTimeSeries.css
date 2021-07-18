@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: lightskyblue; */
+}
+header {
+    /* background-color: lightgrey; */
+    text-align: center;
+    min-height: 13vh;
+    display: flex;
+    background-color: lightgrey;
+}
+#brand {
+    flex: 1;
+    padding-top: 16px;
+}
+#title {
+    flex: 10;
+    padding-left: 4rem;
+    text-align: left;
+}
+#brand img {
+    width: 2.5rem;
+}
+#start, #finish {
+    display: flex;
+    flex-direction: column;
+    /*  */
+}
+#start input, #finish input {
+    flex: 1;
+    width: 90%;
+    margin-bottom: 0.5rem;
+    /* margin-left: 2rem; */
+}
+#start label, #finish label {
+    flex: 1;
+}
+#content {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 25px; */
+    padding: 16px 25px;
+    font-size: 1.5em;
+}
+#content input[type="date"] {
+    margin: 0.5em 0;
+    font-size: 1.1em;
+}
+.ref p {
+    margin: 0.5em 0;
+}
+#content select {
+    width: 90%;
+    font-size: 0.9em;
+}
+/* table {
+    margin-top: 2rem;
+    padding-left: 1rem;
+}
+tr,td,th {
+    padding: 1rem;
+    text-align: center;
+} */
+#sbmt button {
+    margin-top: 1rem;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+#sbmt button:disabled {
+    background-color: lightgray;
+}
+#sbmt button:enabled {
+    background-color: blue;
+    color: white;
+}
+#myGraph {
+    width: 65%;
+}
+#result2 {
+    margin-top: 2rem;
+}
+@media only screen and (max-width: 900px) {
+    #content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #myGraph {
+        margin-top: 2rem;
+        width: 80%;
+    }
+  }
